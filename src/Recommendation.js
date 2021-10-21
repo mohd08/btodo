@@ -10,6 +10,9 @@ export default function Recommendation() {
     (data) =>
       data.price === 0.0 && data.accessibility === "Few to no challenges"
   );
+  // var harga = data_array.filter(
+
+  // )
   //randomize recommended
   var recommends = Shuffle(filter);
 

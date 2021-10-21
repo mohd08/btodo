@@ -62,17 +62,20 @@
   font-size: large;
 }
 
-.App-link {
-  color: #516469;
+/* This only changes this particular animation duration */
+.animate__animated.animate__fadeInLeft {
+  --animate-duration: 2s;
+  font-size: 50px;
+  text-align: left;
+  padding: 15px;
+  width: 28%;
+  background-color: #daad86;
+  border-radius: 0.5rem;
+  justify-content: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.App-link {
+  color: #516469;
 }
 
 .Weather {
@@ -85,6 +88,14 @@
   min-height: fit-content;
   padding: 5px 0 30px;
   width: 100%;
+}
+
+.animate__animated.animate__flipInX {
+  --animate-duration: 2s;
+  font-size: 50px;
+  padding: 15px;
+  background-color: #daad86;
+  border-radius: 0.5rem;
 }
 
 .Recommendation {

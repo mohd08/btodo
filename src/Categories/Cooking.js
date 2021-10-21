@@ -1,5 +1,6 @@
 import data_array from "../obj.js";
 import "./Cat.css";
+import "../App.css";
 
 function Cooking() {
   var filtered = data_array.filter((data) => data.type === "cooking");

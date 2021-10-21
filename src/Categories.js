@@ -37,7 +37,12 @@ function Categories() {
       <Route path="/music" component={Music} />
       <Route path="/busywork" component={Busywork} />
 
-      <h1 style={{ textAlign: "center" }}>Categories</h1>
+      <h1
+        style={{ textAlign: "center" }}
+        class="animate__animated animate__flipInX"
+      >
+        Categories
+      </h1>
       <div className="Slider">
         <Carousel breakPoints={breakPoints}>
           <button
