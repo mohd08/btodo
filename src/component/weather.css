@@ -8,8 +8,6 @@
   display: inline-block;
   align-items: center;
   justify-content: center;
-<<<<<<< HEAD
-=======
   width: 30vw;
   height: 30vh;
   margin: 0.5rem;
@@ -22,7 +20,6 @@
   max-width: 550px;
   max-height: 300px;
   background-color: rgb(172, 246, 246);
->>>>>>> 5e71c0b6de81545912b1f068142cd363deb08b07
 }
 
 .city {
@@ -86,6 +83,7 @@ p > img {
 select {
   border-radius: 100px;
   background: white;
+  text-align: center;
 }
 
 .wave {

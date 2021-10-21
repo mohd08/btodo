@@ -37,7 +37,7 @@ export default function Recommendation() {
                 </li>
                 <li>
                   <strong>No. of Participants : </strong>
-                  {list.participant}
+                  {list.participants}
                 </li>
                 <li>
                   <strong>Type: </strong>
@@ -57,7 +57,7 @@ export default function Recommendation() {
 
   return (
     <div id="bored-container">
-      <h1>Recommended</h1>
+      <h1 className="animate">Recommended</h1>
       <div id="box-container">{mappingRecs}</div>
     </div>
   );

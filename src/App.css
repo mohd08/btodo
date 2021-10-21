@@ -40,38 +40,77 @@
     opacity: 0;
   }
   20% {
-    opacity: 1;
+    opacity: 0;
   }
   80% {
     opacity: 1;
   }
   100% {
-    opacity: 0;
+    opacity: 1;
   }
 }
+
 .Weather-col {
-  color: black;
+  /* color: black; */
   display: inline-flex;
   align-items: center;
   width: calc(100% - 20px);
   padding: 0 10px;
   /* height: 30vh; */
-  background-color: #e1eedd;
   min-height: 100px;
   overflow: hidden;
   font-size: large;
+  position: relative;
+  background: url(https://static.radulescu.me/examples/clouds/clouds1000.png);
+  background: url(https://static.radulescu.me/examples/clouds/clouds1000.png) 0
+      200px,
+    url(https://static.radulescu.me/examples/clouds/clouds1200_1.png) 0 300px,
+    url(https://static.radulescu.me/examples/clouds/clouds1000_blur3.png) 100px
+      250px;
+  animation: wind 20s linear infinite;
 }
 
-/* This only changes this particular animation duration */
-.animate__animated.animate__fadeInLeft {
-  --animate-duration: 2s;
+.Main-header {
   font-size: 50px;
   text-align: left;
-  padding: 15px;
-  width: 28%;
-  background-color: #daad86;
-  border-radius: 0.5rem;
-  justify-content: center;
+  font-weight: bold;
+  margin-left: 30px;
+  text-shadow: 3px 3px #d1d1d1;
+  width: 40%;
+  height: auto;
+  position: relative;
+  animation: mymove 3s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes mymove {
+  from {
+    left: -100px;
+  }
+  to {
+    left: 0px;
+  }
+  0% {
+    opacity: 0;
+  }
+  40% {
+    opacity: 0;
+  }
+  70% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes wind {
+  0% {
+    background-position: 0 200px, 0 300px, 100px 250px;
+  }
+  100% {
+    background-position: 1000px 200px, 1200px 300px, 1100px 250px;
+  }
 }
 
 .App-link {
@@ -90,12 +129,29 @@
   width: 100%;
 }
 
-.animate__animated.animate__flipInX {
-  --animate-duration: 2s;
-  font-size: 50px;
-  padding: 15px;
-  background-color: #daad86;
+.animate {
+  display: inline-block;
+  align-items: center;
+  width: 35vh;
+  padding: 10px;
+  animation-name: flipInX;
+  background-color: #fad6a6;
   border-radius: 0.5rem;
+}
+
+@keyframes flipInX {
+  0% {
+    transform: perspective(20px) rotateX(90deg);
+  }
+  40% {
+    transform: perspective(20px) rotateX(70deg);
+  }
+  70% {
+    transform: perspective(20px) rotateX(-70deg);
+  }
+  100% {
+    transform: perspective(20px) rotateX(0deg);
+  }
 }
 
 .Recommendation {
@@ -210,8 +266,6 @@
 }
 /* Dropdown */
 .dropbtn {
-  background-color: #04aa6d;
-  color: white;
   padding: 16px;
   font-size: 16px;
   border: none;
@@ -240,10 +294,6 @@
 
 .dropdown:hover .dropmenu {
   display: block;
-}
-
-.dropdown:hover .dropbtn {
-  background-color: #036e47;
 }
 
 /* .category {

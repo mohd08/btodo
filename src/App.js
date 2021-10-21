@@ -42,9 +42,9 @@ function App() {
 const Home = () => (
   <div className="Main-container">
     <div className="Weather-col">
-      <div class="animate__animated animate__fadeInLeft">
+      <div className="Main-header" >
         <strong>
-          Hey There, <br /> Let's discover
+          Hey There! <br /> Let's discover
         </strong>
       </div>
       <div className="Weather">

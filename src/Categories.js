@@ -39,7 +39,8 @@ function Categories() {
 
       <h1
         style={{ textAlign: "center" }}
-        class="animate__animated animate__flipInX"
+        className="animate"
+        // class="animate__animated animate__flipInX"
       >
         Categories
       </h1>
