@@ -1,5 +1,6 @@
 import { BrowserRouter as Router, Switch, Route, Link } from "react-router-dom";
 import "./App.css";
+import "./Categories/Cat.css";
 import Weather from "./component/weather.js";
 import Categories from "./Categories";
 import Recommendation from "./Recommendation";
@@ -17,7 +18,7 @@ function App() {
   return (
     <Router>
       <div className="App">
-        <Link to="/">
+        <Link to="/" style={{ textDecoration: "none" }}>
           <p className="Title"> BTodo App </p>
         </Link>
         <Switch>
@@ -38,7 +39,7 @@ function App() {
 }
 
 const Home = () => (
-  <div>
+  <div className="Main-container">
     <div className="Weather-col">
       <div>Hey There, Let's discover</div>
       <div className="Weather">

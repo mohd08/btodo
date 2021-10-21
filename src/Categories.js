@@ -1,12 +1,9 @@
 import React from "react";
 import Carousel from "react-elastic-carousel";
-import {
-  BrowserRouter as 
-  Route,
-  BrowserRouter,
-} from "react-router-dom";
+import { BrowserRouter as Route, BrowserRouter } from "react-router-dom";
 import Images from "./Images/Image";
 import "./App.css";
+import "./Categories/Cat.css";
 import { useHistory } from "react-router-dom";
 import Recreation from "./Categories/Recreational";
 import Education from "./Categories/Education";
