@@ -8,7 +8,7 @@ function Busywork() {
     <div className="App">
       <div id="bored-container">
         <h2>Category: Busy Work</h2>
-        <FilterDisplay category="cooking" data_array={data_array} />
+        <FilterDisplay category="busywork" data_array={data_array} />
       </div>
     </div>
   );

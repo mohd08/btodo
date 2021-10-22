@@ -8,7 +8,7 @@ function Education() {
     <div className="App">
       <div id="bored-container">
         <h2>Category: Education</h2>
-        <FilterDisplay category="cooking" data_array={data_array} />
+        <FilterDisplay category="education" data_array={data_array} />
       </div>
     </div>
   );

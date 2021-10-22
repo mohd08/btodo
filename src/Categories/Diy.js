@@ -8,7 +8,7 @@ function Diy() {
     <div className="App">
       <div id="bored-container">
         <h2>Category: DIY</h2>
-        <FilterDisplay category="cooking" data_array={data_array} />
+        <FilterDisplay category="diy" data_array={data_array} />
       </div>
     </div>
   );
