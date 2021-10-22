@@ -70,6 +70,15 @@
   animation: wind 20s linear infinite;
 }
 
+@keyframes wind {
+  0% {
+    background-position: 0 200px, 0 300px, 100px 250px;
+  }
+  100% {
+    background-position: 1000px 200px, 1200px 300px, 1100px 250px;
+  }
+}
+
 .Main-header {
   font-size: 50px;
   text-align: left;
@@ -104,15 +113,6 @@
   }
 }
 
-@keyframes wind {
-  0% {
-    background-position: 0 200px, 0 300px, 100px 250px;
-  }
-  100% {
-    background-position: 1000px 200px, 1200px 300px, 1100px 250px;
-  }
-}
-
 .App-link {
   color: #516469;
 }
@@ -134,24 +134,8 @@
   align-items: center;
   width: 35vh;
   padding: 10px;
-  animation-name: flipInX;
   background-color: #fad6a6;
   border-radius: 0.5rem;
-}
-
-@keyframes flipInX {
-  0% {
-    transform: perspective(20px) rotateX(90deg);
-  }
-  40% {
-    transform: perspective(20px) rotateX(70deg);
-  }
-  70% {
-    transform: perspective(20px) rotateX(-70deg);
-  }
-  100% {
-    transform: perspective(20px) rotateX(0deg);
-  }
 }
 
 .Recommendation {
@@ -296,5 +280,3 @@
   display: block;
 }
 
-/* .category {
-} */
