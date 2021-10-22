@@ -1,19 +1,14 @@
 import data_array from "../obj.js";
-import "./Rec.css";
-import { useHistory } from "react-router-dom";
+import "./Cat.css";
+import "../App.css";
 import FilterDisplay from "./Filter.js";
 
 function Busywork() {
-  const history = useHistory();
-
   return (
-    <div>
-      <button onClick={() => history.goBack()}>Back</button>
-      <div className="App">
-        <div id="bored-container">
-          <h2>Category: Busywork</h2>
-          <FilterDisplay category="busywork" data_array={data_array} />
-        </div>
+    <div className="App">
+      <div id="bored-container">
+        <h2>Category: Busy Work</h2>
+        <FilterDisplay category="cooking" data_array={data_array} />
       </div>
     </div>
   );

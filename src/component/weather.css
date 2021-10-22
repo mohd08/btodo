@@ -85,6 +85,7 @@ p > img {
 select {
   border-radius: 100px;
   background: white;
+  text-align: center;
   min-width: 10%;
   max-width: 60%;
 }
@@ -135,6 +136,11 @@ select {
   from {
     transform: rotate(360deg);
   }
+}
+
+.Display {
+  align-items: center;
+  justify-content: center;
 }
 
 .Display {

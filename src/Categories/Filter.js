@@ -1,4 +1,5 @@
 import { useState, useEffect } from "react";
+import "../App.css";
 
 const FilterDisplay = ({ category, data_array }) => {
   const initial_data = data_array.filter((d) => d.type === category);

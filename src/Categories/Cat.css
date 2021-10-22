@@ -20,8 +20,6 @@
   display: flex;
   align-items: center;
   justify-content: center;
-
-  /* transition: shake; */
 }
 
 .card:hover {
