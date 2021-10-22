@@ -292,7 +292,3 @@
 .dropdown:hover .dropmenu {
   display: block;
 }
-
-.dropdown:hover .dropbtn {
-  background-color: #036e47;
-}
