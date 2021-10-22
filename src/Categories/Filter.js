@@ -6,8 +6,6 @@ const FilterDisplay = ({ category, data_array }) => {
   const [filtered_data, setFilteredData] = useState(initial_data);
   const [filter_type, setFilterType] = useState("");
 
-  console.log(initial_data);
-
   useEffect(() => {
     if (filter_type === "All") {
       setFilteredData(initial_data);
@@ -20,6 +18,7 @@ const FilterDisplay = ({ category, data_array }) => {
     } else if (filter_type === "Priced") {
       setFilteredData(initial_data.filter((data) => data.price > 0.0));
     }
+  // eslint-disable-next-line
   }, [filter_type]);
 
   const handleFilterSelect = (e) => {
