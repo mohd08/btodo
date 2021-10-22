@@ -66,12 +66,26 @@
   color: #516469;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Mobile Devices ----------- */
+@media screen and (min-width: 320px) and (max-width: 480px) {
+  .Logo {
+    min-height: 35vmin;
+    pointer-events: none;
   }
-  to {
-    transform: rotate(360deg);
+  #box-container {
+    display: grid;
+    grid-template: 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    justify-items: center;
+  }
+  #box-button {
+    width: 15rem;
+    height: 15rem;
+    font-size: 1rem;
+  }
+
+  #box-button > p {
+    font-size: 27px;
   }
 }
 

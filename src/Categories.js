@@ -3,7 +3,7 @@ import Carousel from "react-elastic-carousel";
 import { BrowserRouter as Route, BrowserRouter } from "react-router-dom";
 import Images from "./Images/Image";
 import "./App.css";
-import "./Categories/Cat.css";
+import "./Categories/Rec.css";
 import { useHistory } from "react-router-dom";
 import Recreation from "./Categories/Recreational";
 import Education from "./Categories/Education";
@@ -36,7 +36,6 @@ function Categories() {
       <Route path="/relax" component={Relaxation} />
       <Route path="/music" component={Music} />
       <Route path="/busywork" component={Busywork} />
-
       <h1 style={{ textAlign: "center" }}>Categories</h1>
       <div className="Slider">
         <Carousel breakPoints={breakPoints}>
