@@ -26,6 +26,7 @@ export default function Recommendation() {
         return (
           <div class="scale" id="box-button">
             <img src={Images.recommend} className="Logo" alt="" />
+            <br />
             <p>{list.activity}</p>
             <div class="info">
               <h2>Details</h2>

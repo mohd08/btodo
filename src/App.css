@@ -27,7 +27,7 @@
 }
 
 .Logo {
-  height: 20vmin;
+  height: 26vmin;
   pointer-events: none;
 }
 
@@ -86,8 +86,8 @@
 }
 
 .Main-header {
-  font-size: 50px;
-  text-align: left;
+  font-size: 8vh;
+  text-align: center;
   font-weight: bold;
   margin-left: 30px;
   text-shadow: 3px 3px #d1d1d1;
@@ -289,4 +289,3 @@
 .dropdown:hover .dropbtn {
   background-color: #036e47;
 }
-

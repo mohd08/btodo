@@ -85,12 +85,9 @@ p > img {
 select {
   border-radius: 100px;
   background: white;
-<<<<<<< HEAD
   text-align: center;
-=======
   min-width: 10%;
   max-width: 60%;
->>>>>>> 6b8519e9bd63464f7a3c49c779a378678c5c429b
 }
 
 .wave {
