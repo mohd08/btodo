@@ -58,7 +58,7 @@
 
 .Weather-col {
   /* color: black; */
-  display: inline-flex;
+  display: flex;
   align-items: center;
   width: calc(100% - 20px);
   padding: 0 10px;
@@ -66,6 +66,8 @@
   min-height: 100px;
   overflow: hidden;
   font-size: large;
+  flex-wrap: wrap;
+  justify-content: center;
   position: relative;
   background: url(https://static.radulescu.me/examples/clouds/clouds1000.png);
   background: url(https://static.radulescu.me/examples/clouds/clouds1000.png) 0
