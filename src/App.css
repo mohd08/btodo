@@ -27,7 +27,7 @@
 }
 
 .Logo {
-  height: 26vmin;
+  height: 20vmin;
   pointer-events: none;
 }
 
@@ -235,7 +235,7 @@
 }
 
 /* Mobile Devices ----------- */
-@media screen and (min-width: 320px) and (max-width: 480px) {
+@media screen and (min-width: 320px) and (max-width: 720px) {
   .Logo {
     min-height: 35vmin;
     pointer-events: none;
@@ -254,6 +254,11 @@
 
   #box-button > p {
     font-size: 27px;
+  }
+
+  .Weather-col {
+    display: flex;
+    flex-direction: column;
   }
 }
 /* Dropdown */

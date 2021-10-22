@@ -148,3 +148,9 @@ select {
   align-items: center;
   justify-content: center;
 }
+
+@media screen and (min-width: 320px) and (max-width: 720px) {
+  .Container {
+    margin-right: 100px;
+  }
+}
