@@ -8,7 +8,7 @@ function Social() {
     <div className="App">
       <div id="bored-container">
         <h2>Category: Social</h2>
-        <FilterDisplay category="cooking" data_array={data_array} />
+        <FilterDisplay category="social" data_array={data_array} />
       </div>
     </div>
   );

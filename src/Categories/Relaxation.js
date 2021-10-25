@@ -8,7 +8,7 @@ function Relaxation() {
     <div className="App">
       <div id="bored-container">
         <h2>Category: Relaxation</h2>
-        <FilterDisplay category="cooking" data_array={data_array} />
+        <FilterDisplay category="relaxation" data_array={data_array} />
       </div>
     </div>
   );
